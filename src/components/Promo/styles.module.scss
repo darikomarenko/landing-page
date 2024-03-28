@@ -16,11 +16,20 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Disket";
+    src:
+      url("../../fonts/Disket-Mono-Regular.ttf");
+    font-style: normal;
+    font-display: swap;
+  }
   
 .promo {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+    max-width: 1440px;
     height: 100%;
     padding: 40px;
     background: black;
@@ -91,14 +100,20 @@
     }
 
     &__album {
-        align-self:flex-end;
         position: absolute;
+        left: 900px;
+        width: 400px;
+
+        &-image {
+            perspective: 400px;
+        }
+
     }
 
     &__team {
         display: flex;
         flex-direction: row;
-        margin-top: 60px;
+        margin-top: 160px;
         &__description {
             display: flex;
             flex-direction: column;
@@ -122,17 +137,76 @@
         }
         &__table {
             display: grid;
-            padding-top: 100px;
-            grid-template-columns: auto auto;
+            margin-top: 80px;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto;
             width: 700px;
             color: #FFFFFF;
             border-color: #FFFFFF;
             border: 2px;
+            background: radial-gradient(rgba(207, 252, 134, 0.3), rgba(217, 217, 217, 0));
+
+            :nth-child(1) {
+                display: flex;
+                border-radius: 20px 0px 0px 0px;
+                font-family: 'Disket';
+                font-size: 30px;
+                font-weight: 400;
+                justify-content: center;
+                align-items: center;
+            }
+
+            :nth-child(2) {
+                display: flex;
+                border-radius: 0px 20px 0px 0px;
+                font-family: 'Disket';
+                font-size: 30px;
+                font-weight: 400;
+                justify-content: center;
+                align-items: center;
+            }
+
+            :nth-child(3) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 40px;
+                border-radius: 0px 0px 0px 20px;
+                font-family: 'Spectral';
+                padding-top: 30px;
+                padding-bottom: 60px;
+
+                > div {
+                    font-family: 'Spectral';
+                    background-color: #7646FF;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+
+            :nth-child(4) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 40px;
+                border-radius: 0px 0px 20px 0px;
+                font-family: 'Spectral';
+                padding-top: 30px;
+                padding-bottom: 60px;
+
+                > div {
+                    font-family: 'Spectral';
+                    background-color: #7646FF;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
             &-item {
                 padding: 10px;
                 border: 1px solid white;
-                border-radius: 0px 20px 20px 0px;
+
             }
         }
     }
