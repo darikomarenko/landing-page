@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Enthalpy";
+    src:
+      url("../../fonts/enthalpy298regular.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Spectral";
+    src:
+      url("../../fonts/Spectral-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+.promo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 40px;
+    background: black;
+    &__maininfo {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+
+        &-titleOne, 
+        &-titleTwo {
+            font-family: "Enthalpy";
+            font-size: 92px;
+            line-height: 93.39px;
+            width: 712px;
+
+        }
+        &-titleOne {
+            color: #CFFC86
+        }
+        &-titleTwo {
+            color: #FAFD83;
+        }
+
+        &-description {
+            font-family: 'Spectral';
+            font-size:22px;
+            line-height: 25px;
+            color: #FFFFFF;
+            max-width: 567px;
+            max-height: 100px;
+            opacity: 80%;
+            padding-bottom: 40px;
+        }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        &-one,
+        &-two,
+        &-three {
+            font-family: 'Spectral';
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33.48px;
+            color: white;
+            padding: 20px;
+            border-radius: 36px;
+        }
+
+        &-one {
+            background-color: #7646FF;
+            border-color: #7646FF;
+
+        }
+
+        &-two {
+            background-color: black;
+            border-color: #7646FF;
+
+        }
+        &-three {
+            opacity: 40%;
+        }
+    }
+
+    }
+
+    &__album {
+        align-self:flex-end;
+        position: absolute;
+    }
+
+    &__team {
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        &__description {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+
+            &-title {
+            font-family: "Enthalpy";
+            font-size: 98px;
+            line-height: 99.47px;
+            color: #FFFFFF;
+            width: 745px;
+            }
+            &-text {
+            width: 517px;
+            font-family: 'Spectral';
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            color: #FFFFFF;
+            }
+        }
+        &__table {
+            display: grid;
+            padding-top: 100px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            width: 700px;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            border: 2px;
+            &-item {
+                padding: 10px;
+                border: 1px solid white;
+                border-radius: 0px 20px 20px 0px;
+            }
+        }
+    }
+}
