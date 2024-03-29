@@ -28,11 +28,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
     max-width: 1440px;
-    height: 100%;
     padding: 40px;
-    background: black;
+    background-image: url('../../assets/backgroundOne.png');
     &__maininfo {
         display: flex;
         flex-direction: column;
@@ -101,8 +99,9 @@
 
     &__album {
         position: absolute;
-        left: 900px;
-        width: 400px;
+        object-fit: contain;
+        left: 740px;
+        width: 300px;
 
         &-image {
             perspective: 400px;
