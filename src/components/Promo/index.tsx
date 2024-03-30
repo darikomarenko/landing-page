@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import cardOne from '../../assets/one.png'
+//import cardOne from '../../assets/one.png'
 import workerOne from '../../assets/worker1.png'
 import workerTwo from '../../assets/worker2.png'
 
@@ -17,7 +17,7 @@ export default function Promo() {
       </div>
       </div>
     <div className={styles['promo__album']}>
-        <img className={styles['promo__album-image']} src={cardOne} alt='photo'/>
+        {/*<img className={styles['promo__album-image']} src={cardOne} alt='photo'/>*/}
         </div>
     <div className={styles['promo__team']}>
     <div className={styles['promo__team__description']}>
