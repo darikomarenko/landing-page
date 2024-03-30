@@ -3,7 +3,7 @@ import globe from '../../assets/globe.svg'
 
 export default function Prices() {
   return (
-    <div className={styles['prices']}>
+    <section className={styles['prices']}>
       <div className={styles['prices__header']}>
         <div className={styles['prices__header__one']}>/услуги</div>
         <div className={styles['prices__header__two']}>
@@ -56,6 +56,6 @@ export default function Prices() {
         </div>
       </div>
       <hr/>
-    </div>
+    </section>
   )
 }

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Intro";
+    src:
+      url("../../../fonts/IntroDemo-BlackInlineCAPS.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Spectral";
+    src:
+      url("../../fonts/Spectral-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.review-card {
+    border-radius: 16px;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: left;
+
+    &-green {
+        border-radius: 16px;
+        border: 3px solid black;
+        padding: 10px;
+        background-color: #CFFC8699;
+        text-align: center;
+    }
+
+
+    &__title {
+        font-family: 'Intro';
+        font-size: 22px;
+        line-height: 15px;
+    }
+    &__description {
+        font-family: 'Spectral';
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &__button {
+        font-family: 'Intro';
+        font-size: 25px;
+        background-color: #F0FFD9;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
