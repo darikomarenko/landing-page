@@ -28,6 +28,9 @@
         padding: 10px;
         background-color: #CFFC8699;
         text-align: center;
+        p::before {
+          content: none;
+        }
     }
 
 
@@ -35,6 +38,7 @@
         font-family: 'Intro';
         font-size: 22px;
         line-height: 15px;
+        text-align: center;
     }
     &__description {
         font-family: 'Spectral';
@@ -48,6 +52,7 @@
         border: none;
         border-radius: 10px;
         padding: 10px;
+        margin-top: 90px;
     }
 }
 

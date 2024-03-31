@@ -5,7 +5,7 @@ import workerTwo from '../../assets/worker2.png'
 
 export default function Promo() {
   return (
-    <section className={styles['promo']}>
+    <section id='promo' className={styles['promo']}>
       <div className={styles['promo__maininfo']}>
       <div className={styles['promo__maininfo-titleOne']}>ДИЗАЙНИМ, ВЕРСТАЕМ </div>
       <div className={styles['promo__maininfo-titleTwo']}>САЙТЫ НА ТИЛЬДЕ</div>

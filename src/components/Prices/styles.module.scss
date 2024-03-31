@@ -28,6 +28,7 @@
 .prices {
     background: black;
     padding-top: 40px;
+    padding-bottom: 40px;
     &__header {
         display: flex;
         flex-direction: row;
@@ -94,16 +95,16 @@
 
 }
 
-hr {
+.prices hr {
     width: 90%;
     size: 2;
     color: #B1B1B1;
 }
 
-li {
+.prices li {
     list-style-type: none;
     text-align: right;
    }
-li:after {
+.prices li:after {
     content: url('../../assets/star.svg');
    }

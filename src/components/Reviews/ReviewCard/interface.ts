@@ -1,4 +1,4 @@
-import { IReviewItem } from '../../../constants/types';
+import { IReviewItem } from '../../../constants/Reviews/types';
 
 export interface IReviewItemProps {
 	item: IReviewItem;

@@ -3,7 +3,7 @@ import globe from '../../assets/globe.svg'
 
 export default function Prices() {
   return (
-    <section className={styles['prices']}>
+    <section id='prices' className={styles['prices']}>
       <div className={styles['prices__header']}>
         <div className={styles['prices__header__one']}>/услуги</div>
         <div className={styles['prices__header__two']}>

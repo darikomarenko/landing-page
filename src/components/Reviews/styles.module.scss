@@ -28,3 +28,11 @@
         grid-column-gap: 40px;
     }
 }
+
+.reviews li {
+  list-style-type: none;
+  text-align: left;
+ }
+.reviews p:before {
+  content: url('../../assets/blackStar.svg');
+ }

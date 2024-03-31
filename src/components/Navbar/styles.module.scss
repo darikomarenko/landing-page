@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Intro";
+    src:
+      url("../../../fonts/IntroDemo-BlackInlineCAPS.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+
+    &__logo {
+        padding: 20px;
+        
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        font-family: 'Intro';
+        font-size: 18px;
+    }
+}
+.navbar li {
+    list-style-type: none;
+   }
+
+.navbar a {
+    text-decoration: none;
+    color: inherit; 
+    &:hover {
+        color: rgba(152, 116, 255, 1);
+    }
+}
+

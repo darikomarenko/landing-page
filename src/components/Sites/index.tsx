@@ -5,7 +5,7 @@ import cardThree from '../../assets/four.png'
 
 export default function Sites() {
   return (
-    <section className={styles['sites']}>
+    <section id='sites' className={styles['sites']}>
         <div className={styles['sites__header']}>
             <div className={styles['sites__header-one']}>/наша<br/>гордость</div>
             <div className={styles['sites__header-two']}>Подготовим для Вас 3<br/>коммерческих<br/>предложения по<br/>созданию сайта</div>
