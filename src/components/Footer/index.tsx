@@ -2,11 +2,23 @@ import styles from './styles.module.scss'
 import vkIcon from '../../assets/vk.svg'
 import tgIcon from '../../assets/telegram.svg'
 import tildaIcon from '../../assets/tilda.svg'
+import { useState } from 'react';
+import Modal from '../Modal';
 
 
 export default function Footer() {
+  const [openModal, setOpenModal] = useState<boolean>(false);
+
+  const handleOpenModal = (): void => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = (): void => {
+    setOpenModal(false);
+  };
   return (
     <section id='footer' className={styles['footer']}>
+            <Modal open={openModal} onClose={handleCloseModal} />
       <div className={styles['footer__title']}>СОЗДАДИМ ПРОЕКТ,<br/> КОТОРЫЙ ВАС ВЫДЕЛИТ</div>
       <div className={styles['footer__content']}>
         <div className={styles['footer__icons']}>
@@ -14,7 +26,7 @@ export default function Footer() {
             <img src={tgIcon} width='93px' height='93px'/>
             <img src={tildaIcon} width='93px' height='93px'/>
         </div>
-        <button className={styles['footer__button']}>
+        <button className={styles['footer__button']} onClick={handleOpenModal}>
         &#91; Заказать проект &#93;
         </button>
         <div className={styles['footer__contacts']}>

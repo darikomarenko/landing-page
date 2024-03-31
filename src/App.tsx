@@ -4,6 +4,7 @@ import Prices from '../src/components/Prices'
 import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Modal from './components/Modal'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <Prices/>
     <Reviews/>
     <Footer/>
+    <Modal/>
     </>
   )
 }

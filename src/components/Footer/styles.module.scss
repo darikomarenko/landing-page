@@ -39,6 +39,7 @@
     &__icons {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
     }
 
     &__button {
@@ -75,6 +76,7 @@
         background: linear-gradient(rgba(118, 70, 255, 1), rgba(207, 252, 134, 1));
         -webkit-background-clip: text;
         background-clip: text;
+        cursor: pointer;
     }
 
         }
