@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Enthalpy";
+    src:
+      url("../../fonts/enthalpy298regular.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Comforta";
+    src:
+      url("../../fonts/Comfortaa.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    &__title {
+        font-family: 'Enthalpy';
+        font-size: 87px;
+        color: white;
+
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    &__button {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Enthalpy';
+        font-size: 62px;
+        line-height: 62.93px;
+        background-color: #CFFC86;
+        border-radius: 20px;
+        border: none;
+        width: 598px;
+        height: 320px;
+        cursor: pointer;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        font-family: 'Comforta';
+        font-size: 32px;
+
+        a {
+            font-size: 40px;
+            background: linear-gradient(rgba(207, 252, 134, 1), rgba(118, 70, 255, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background: linear-gradient(rgba(118, 70, 255, 1), rgba(207, 252, 134, 1));
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+    }
+
+        }
+    }
+
+
+}

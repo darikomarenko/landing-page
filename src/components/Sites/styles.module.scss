@@ -29,7 +29,9 @@
     flex-direction: column;
     background-image: url('../../assets/backgroundTwo.png');
     padding-bottom: 40px;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     &__header {
         display: flex;
         flex-direction: row;
