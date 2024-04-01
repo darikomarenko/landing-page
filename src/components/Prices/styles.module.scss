@@ -71,28 +71,20 @@
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
+        transition: color 0.3s ease, stroke 0.3s ease;
 
         &-title {
             color: white;
             font-family: 'Inter';
             font-size: 40px;
-
-            &:hover {
-                color:#CFFC86;
-            }
         }
         &-price {
             color: white;
             font-family: 'Inter';
             font-size: 45px;
             text-align: right;
-            &:hover {
-                color:#CFFC86;
-            }
         }
-
     }
-
 }
 
 .prices hr {
@@ -108,3 +100,13 @@
 .prices li:after {
     content: url('../../assets/star.svg');
    }
+.prices svg {
+        fill: none;
+        transition: fill 0.3s ease;
+        stroke: white;
+    }
+
+.prices__card:hover > *:not(.prices__card-description) {
+    color: #CFFC86;
+    stroke: #CFFC86; 
+}

@@ -38,7 +38,7 @@ export const data: IReviewItem[] = [
             hasButton: false,
 	},
 	{
-		id: '28487f63-6f96-4602-bf81-70c51d9ff8c0',
+		id: '28487f63-6f96-4602-bf81-70c51d9ff8c6',
 		photo: '../assets/personSix.png',
 		description: 'Сотрудничество с этими дизайнерами было отличным опытом! Они создали уникальный дизайн для моего сайта. А еще у них очень крутой сайт, какой гений это делал?',
             hasButton: false,

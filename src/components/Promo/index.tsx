@@ -1,5 +1,8 @@
 import styles from './styles.module.scss'
-//import cardOne from '../../assets/one.png'
+import cardOne from '../../assets/one.png'
+import cardTwo from '../../assets/two.png'
+import cardThree from '../../assets/three.png'
+import cardFour from '../../assets/four.png'
 import workerOne from '../../assets/worker1.png'
 import workerTwo from '../../assets/worker2.png'
 import { useState } from 'react';
@@ -28,8 +31,13 @@ export default function Promo() {
         <div className={styles['promo__maininfo__buttons-three']}>10% по промокоду</div>
       </div>
       </div>
-    <div className={styles['promo__album']}>
-        {/*<img className={styles['promo__album-image']} src={cardOne} alt='photo'/>*/}
+      <div className={styles['promo-stack-container']}>
+    <div className={styles['promo-stack']}>
+    <img src={cardFour} alt="Photo 3"  className={styles["promo-stack__photo"]}/>
+    <img src={cardThree} alt="Photo 1" className={styles["promo-stack__photo"]}/>
+  <img src={cardTwo} alt="Photo 2"  className={styles["promo-stack__photo"]}/>
+  <img src={cardOne} alt="Photo 4"  className={styles["promo-stack__photo"]}/>
+  </div>
         </div>
     <div className={styles['promo__team']}>
     <div className={styles['promo__team__description']}>

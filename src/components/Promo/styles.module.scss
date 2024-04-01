@@ -82,12 +82,13 @@
         &-one {
             background-color: #7646FF;
             border-color: #7646FF;
+            border: none;
 
         }
 
         &-two {
             background-color: black;
-            border-color: #7646FF;
+            border: 2px solid #7646FF;
 
         }
         &-three {
@@ -97,14 +98,71 @@
 
     }
 
-    &__album {
-        position: absolute;
-        object-fit: contain;
-        left: 740px;
-        width: 300px;
+    &-stack-container {
+        perspective: 1000px; 
+        transform: rotateX(62deg) rotateZ(-26deg);
+    }
 
-        &-image {
-            perspective: 400px;
+    &-stack {
+        position: absolute;
+        left: 780px;
+        top: -350px;
+        transform-style: preserve-3d;
+        &:hover {
+            &-photo {
+                transform: translate(-20px);
+            }
+        }
+
+        &__photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 464px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 1s ease;
+            transform: translateY(10px) rotate(-2deg) scale(0.95);
+
+            &:nth-child(1) {
+                z-index: 1;
+                left: -3px;
+                top:129px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+
+            &:nth-child(2) {
+                z-index: 1;
+                left: 16px;
+                top:100px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+            &:nth-child(3) {
+                z-index: 1;
+                left: 35px;
+                top: 58px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+            &:last-child {
+                z-index: 2;
+                left: 60px;
+                border: 2px solid rgba(255, 255, 255, 1);
+            }
+            &:hover {
+                transform: translateY(-200px)
+            }
+
         }
 
     }
@@ -175,6 +233,23 @@
                 font-family: 'Spectral';
                 padding-top: 30px;
                 padding-bottom: 60px;
+                position: relative;
+
+                &::before {
+                    content: 'Стаж 4 года';
+                    font-family: 'Spectral';
+                    text-align: center;
+                    padding: 5px;
+                    font-size: 16px;
+                    position: absolute;
+                    background: rgba(207, 252, 134, 0.75);
+                    width: 96px;
+                    height: 28px;
+                    border-radius: 16px;
+                    transform: rotate(12.1deg);
+                    top: 172px;
+                    left: 76px;
+                }
 
                 > div {
                     font-family: 'Spectral';
@@ -194,6 +269,21 @@
                 font-family: 'Spectral';
                 padding-top: 30px;
                 padding-bottom: 60px;
+                position: relative;
+
+                &::before {
+                    content: 'Стаж 5 лет';
+                    position: absolute;
+                    text-align: center;
+                    padding: 5px;
+                    background: rgba(207, 252, 134, 0.75);
+                    width: 96px;
+                    height: 28px;
+                    border-radius: 16px;
+                    transform: rotate(-17.46deg);
+                    top: 22px;
+                    left: 44px;
+                }
 
                 > div {
                     font-family: 'Spectral';
@@ -205,7 +295,6 @@
             &-item {
                 padding: 10px;
                 border: 1px solid white;
-
             }
         }
     }
