@@ -82,12 +82,13 @@
         &-one {
             background-color: #7646FF;
             border-color: #7646FF;
+            border: none;
 
         }
 
         &-two {
             background-color: black;
-            border-color: #7646FF;
+            border: 2px solid #7646FF;
 
         }
         &-three {
@@ -175,6 +176,23 @@
                 font-family: 'Spectral';
                 padding-top: 30px;
                 padding-bottom: 60px;
+                position: relative;
+
+                &::before {
+                    content: 'Стаж 4 года';
+                    font-family: 'Spectral';
+                    text-align: center;
+                    padding: 5px;
+                    font-size: 16px;
+                    position: absolute;
+                    background: rgba(207, 252, 134, 0.75);
+                    width: 96px;
+                    height: 28px;
+                    border-radius: 16px;
+                    transform: rotate(12.1deg);
+                    top: 172px;
+                    left: 76px;
+                }
 
                 > div {
                     font-family: 'Spectral';
@@ -194,6 +212,21 @@
                 font-family: 'Spectral';
                 padding-top: 30px;
                 padding-bottom: 60px;
+                position: relative;
+
+                &::before {
+                    content: 'Стаж 5 лет';
+                    position: absolute;
+                    text-align: center;
+                    padding: 5px;
+                    background: rgba(207, 252, 134, 0.75);
+                    width: 96px;
+                    height: 28px;
+                    border-radius: 16px;
+                    transform: rotate(-17.46deg);
+                    top: 22px;
+                    left: 44px;
+                }
 
                 > div {
                     font-family: 'Spectral';
@@ -205,7 +238,6 @@
             &-item {
                 padding: 10px;
                 border: 1px solid white;
-
             }
         }
     }
