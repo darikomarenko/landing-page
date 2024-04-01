@@ -98,14 +98,71 @@
 
     }
 
-    &__album {
-        position: absolute;
-        object-fit: contain;
-        left: 740px;
-        width: 300px;
+    &-stack-container {
+        perspective: 1000px; 
+        transform: rotateX(62deg) rotateZ(-26deg);
+    }
 
-        &-image {
-            perspective: 400px;
+    &-stack {
+        position: absolute;
+        left: 780px;
+        top: -350px;
+        transform-style: preserve-3d;
+        &:hover {
+            &-photo {
+                transform: translate(-20px);
+            }
+        }
+
+        &__photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 464px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 1s ease;
+            transform: translateY(10px) rotate(-2deg) scale(0.95);
+
+            &:nth-child(1) {
+                z-index: 1;
+                left: -3px;
+                top:129px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+
+            &:nth-child(2) {
+                z-index: 1;
+                left: 16px;
+                top:100px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+            &:nth-child(3) {
+                z-index: 1;
+                left: 35px;
+                top: 58px;
+                &:hover {
+                    z-index: 3;
+                }
+            }
+
+            &:last-child {
+                z-index: 2;
+                left: 60px;
+                border: 2px solid rgba(255, 255, 255, 1);
+            }
+            &:hover {
+                transform: translateY(-200px)
+            }
+
         }
 
     }
