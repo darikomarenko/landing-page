@@ -66,7 +66,7 @@
     &__buttons {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 25px;
 
         &-one,
         &-two,
@@ -128,8 +128,8 @@
 
             &:nth-child(1) {
                 z-index: 1;
-                left: -3px;
-                top:129px;
+                left: -67px;
+                top:230px;
                 &:hover {
                     z-index: 3;
                 }
@@ -138,8 +138,8 @@
 
             &:nth-child(2) {
                 z-index: 1;
-                left: 16px;
-                top:100px;
+                left: -26px;
+                top:169px;
                 &:hover {
                     z-index: 3;
                 }
@@ -147,8 +147,8 @@
 
             &:nth-child(3) {
                 z-index: 1;
-                left: 35px;
-                top: 58px;
+                left: 16px;
+                top: 87px;
                 &:hover {
                     z-index: 3;
                 }
