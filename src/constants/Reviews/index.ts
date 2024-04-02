@@ -11,7 +11,7 @@ export const data: IReviewItem[] = [
 	},
 	{
 		id: '677e2138-c1a4-4855-aa73-8fae4d062840',
-		photo:  '.personTwo.png',
+		photo:  './personTwo.png',
 		description:
 			'Спасибо команде за их услуги! Мой сайт выглядит стильно и профессионально благодаря им',
             hasButton: false,
@@ -19,7 +19,7 @@ export const data: IReviewItem[] = [
 	},
 	{
 		id: '3142cdd2-1ed8-48bd-9f6f-8206e93f50ac',
-		photo: '.personThree.png',
+		photo: './personThree.png',
 		description: 'Работа с этими ребятами была невероятно продуктивной. Они быстро поняли мои потребности и создали сайт, который превзошел все ожидания',
         hasButton: false,
 	},
