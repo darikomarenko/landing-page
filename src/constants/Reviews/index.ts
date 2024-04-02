@@ -3,7 +3,7 @@ import { IReviewItem } from './types';
 export const data: IReviewItem[] = [
 	{
 		id: '0d00ca1b-8a46-4377-bd55-f56563b4162e',
-		photo: './public/images/personOne.png',
+		photo: 'landing-page/public/images/personOne.png',
 		description:
 			'Эти ребята просто удивительные! Я смогла создать свою страничку без единой проблемы. Рекомендую всем!',
         hasButton: false,
