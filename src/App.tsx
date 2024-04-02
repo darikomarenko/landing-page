@@ -16,7 +16,9 @@ function App() {
     <Prices/>
     <Reviews/>
     <Footer/>
-    <Modal/>
+    <Modal open={false} onClose={function (): void {
+        throw new Error('Function not implemented.')
+      } }/>
     </>
   )
 }
