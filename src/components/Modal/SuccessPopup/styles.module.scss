@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Enthalpy";
+    src:
+      url("../../fonts/enthalpy298regular.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.successPopup {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border: 2px solid white;
+    width: 70vw;
+    max-width: 882px;
+    max-height: 90vh;
+    border-radius: 35px;
+    padding: 50px;
+
+    &__message {
+        font-family: "Enthalpy";
+            font-size: 92px;
+            line-height: 93.39px;
+            width: 712px;
+            color:  #CFFC86;
+            text-align: center;
+    }
+}
