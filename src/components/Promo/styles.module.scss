@@ -32,6 +32,8 @@
     background-image: url('../../assets/backgroundOne.png');
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
     &__maininfo {
         display: flex;
         flex-direction: column;

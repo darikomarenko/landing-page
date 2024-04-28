@@ -31,6 +31,8 @@
     padding: 40px;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
     
     &__header {
         display: flex;

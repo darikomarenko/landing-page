@@ -22,6 +22,8 @@
     flex-direction: column;
     padding: 40px;
     gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &__content {
         display: flex;
