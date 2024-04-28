@@ -33,6 +33,7 @@
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
     
     &__header {
         display: flex;
@@ -59,11 +60,13 @@
         flex-direction: row;
         padding-bottom: 50px;
         justify-content: space-evenly;
+        gap: 5vw;
         &-card {
             filter: grayscale(100%);
             border-radius: 20px;
             object-fit: cover;
-            width: 380px;
+            max-width: 380px;
+            width: 30vw;
             transition: transform .2s;
             &:hover {
                 filter: none;
