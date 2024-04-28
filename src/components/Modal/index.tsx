@@ -62,7 +62,7 @@ export default function Modal({ open, onClose }: ModalProps) {
               <div className={styles['popup__input__inputGroup']}>
                 <div className={styles['popup__input__inputGroup-one']}>
                   <label>Имя</label>
-                  <input type='text' className={styles['popup__input']} placeholder="Алексей" name='name' pattern="[A-Za-z\s]*"  required/>
+                  <input type='text' className={styles['popup__input']} placeholder="Алексей" name='name' pattern="[A-Za-zА-Яа-я\s]*" required/>
                   <hr/>
                 </div>
                 <div className={styles['popup__input__inputGroup-one']}>

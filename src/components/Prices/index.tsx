@@ -8,12 +8,12 @@ export default function Prices() {
         <div className={styles['prices__header__one']}>/услуги</div>
         <div className={styles['prices__header__two']}>
             <div className={styles['prices__header__two-one']}>МЫ ПРЕДЛАГАЕМ</div>
-        <div className={styles['prices__header__two-two']}>Наша команда осуществляет полный спектр услуг по созданию сайта на Тильде</div>
+        <div className={styles['prices__header__two-two']}>Наша команда осуществляет полный спектр услуг по созданию сайта</div>
         </div>
       </div>
       <hr/>
       <div className={styles['prices__card']}>
-      <svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="10%" height="10%" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M55.5 110C85.5995 110 110 85.5995 110 55.5C110 25.4005 85.5995 1 55.5 1C25.4005 1 1 25.4005 1 55.5C1 85.5995 25.4005 110 55.5 110Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M55.5 1C41.5056 15.694 33.7 35.2082 33.7 55.5C33.7 75.7918 41.5056 95.306 55.5 110C69.4943 95.306 77.2999 75.7918 77.2999 55.5C77.2999 35.2082 69.4943 15.694 55.5 1Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M1 55.5H110" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -35,7 +35,7 @@ export default function Prices() {
       </div>
       <hr/>
       <div className={styles['prices__card']}>
-      <svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="10%" height="10%" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M55.5 110C85.5995 110 110 85.5995 110 55.5C110 25.4005 85.5995 1 55.5 1C25.4005 1 1 25.4005 1 55.5C1 85.5995 25.4005 110 55.5 110Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M55.5 1C41.5056 15.694 33.7 35.2082 33.7 55.5C33.7 75.7918 41.5056 95.306 55.5 110C69.4943 95.306 77.2999 75.7918 77.2999 55.5C77.2999 35.2082 69.4943 15.694 55.5 1Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M1 55.5H110" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -55,7 +55,7 @@ export default function Prices() {
       </div>
       <hr/>
       <div className={styles['prices__card']}>
-      <svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="10%" height="10%" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M55.5 110C85.5995 110 110 85.5995 110 55.5C110 25.4005 85.5995 1 55.5 1C25.4005 1 1 25.4005 1 55.5C1 85.5995 25.4005 110 55.5 110Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M55.5 1C41.5056 15.694 33.7 35.2082 33.7 55.5C33.7 75.7918 41.5056 95.306 55.5 110C69.4943 95.306 77.2999 75.7918 77.2999 55.5C77.2999 35.2082 69.4943 15.694 55.5 1Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M1 55.5H110" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

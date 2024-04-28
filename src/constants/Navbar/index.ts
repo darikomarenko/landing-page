@@ -24,9 +24,4 @@ export const navbarItems = [
 		title: 'Контакты',
 		link: '#footer',
 	},
-	{
-		id: '2273d070-dc65-4c92-a0fb-93ab31ff6c2d',
-		title: 'Контакты',
-		link: '#contacts',
-	},
 ];
