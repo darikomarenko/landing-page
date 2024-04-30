@@ -12,9 +12,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
 
     &__title {
         font-family: 'Enthalpy';
@@ -22,6 +22,10 @@
         color: black;
         text-align: center;
         margin-top: 0;
+
+        @media screen and (max-width: 768px) {
+          font-size: 80px;
+        }
     }
     &__list {
         display: grid;
@@ -29,6 +33,10 @@
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 40px;
         grid-column-gap: 40px;
+
+        @media screen and (max-width: 768px) {
+          grid-template-columns: 2fr 2fr;
+        }
     }
 }
 

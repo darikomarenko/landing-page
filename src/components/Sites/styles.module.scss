@@ -31,9 +31,9 @@
     padding: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     
     &__header {
         display: flex;
@@ -60,7 +60,7 @@
         flex-direction: row;
         padding-bottom: 50px;
         justify-content: space-evenly;
-        gap: 5vw;
+        //gap: 5vw;
         &-card {
             filter: grayscale(100%);
             border-radius: 20px;
