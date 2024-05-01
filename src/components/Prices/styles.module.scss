@@ -39,8 +39,11 @@
         &__one {
             font-family: 'Inter';
             font-size: 33px;
-            font-weight: 33px;
-            flex-basis: 12%;
+            flex-basis: 19%;
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
 
         }
         &__two {
@@ -58,20 +61,28 @@
                 font-size: 80px;
             }
 
+            @media screen and (max-width: 425px) {
+                font-size: 60px;
+              }
+
             }
             &-two {
                 display: flex;
                 font-family: 'Inter';
                 font-size: 33px;
                 color: #BCBCBC;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 20px;
+                  }
             }
 
             @media screen and (max-width:1257px) {
-                padding-left: 153px;
+                padding-left: 100px;
             }
 
-            @media screen and (max-width:1257px) {
-                padding-left: 50px;
+            @media screen and (max-width:768px) {
+                padding-left: 0px;
             }
         }
 
@@ -106,6 +117,11 @@
                 font-size: 30px;
             }
         }
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 }
 
@@ -118,6 +134,10 @@
 .prices li {
     list-style-type: none;
     text-align: right;
+
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
    }
 .prices li:after {
     content: url('../../assets/star.svg');

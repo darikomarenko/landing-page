@@ -26,6 +26,10 @@
         @media screen and (max-width: 768px) {
           font-size: 80px;
         }
+        @media screen and (max-width: 425px) {
+          font-size: 60px;
+        }
+        
     }
     &__list {
         display: grid;
@@ -37,6 +41,9 @@
         @media screen and (max-width: 768px) {
           grid-template-columns: 2fr 2fr;
         }
+        @media screen and (max-width: 425px) {
+          grid-template-columns: 1fr;
+      }
     }
 }
 
