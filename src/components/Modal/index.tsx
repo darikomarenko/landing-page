@@ -56,16 +56,16 @@ export default function Modal({ open, onClose }: ModalProps) {
       <ModalBackground zindex="900" onClick={onClose}>
         <div className={styles['popup']}>
           <form className={styles['popup__form']} onSubmit={handleSubmit}>
-            <div className={styles['popup__title']}>Обсудить проект</div>
-            <div className={styles['popup__description']}>Оставьте свои контактные данные для обсуждения вашего проекта</div>
-            <div className={styles['popup__input']}>
-              <div className={styles['popup__input__inputGroup']}>
-                <div className={styles['popup__input__inputGroup-one']}>
+            <div className={styles['popup__form-title']}>Обсудить проект</div>
+            <div className={styles['popup__form-description']}>Оставьте свои контактные данные для обсуждения вашего проекта</div>
+            <div className={styles['popup__form-input']}>
+              <div className={styles['popup__form-input__inputGroup']}>
+                <div className={styles['popup__form-input__inputGroup-one']}>
                   <label>Имя</label>
-                  <input type='text' className={styles['popup__input']} placeholder="Алексей" name='name' pattern="[A-Za-zА-Яа-я\s]*" required/>
+                  <input type='text' className={styles['popup__form-input']} placeholder="Алексей" name='name' pattern="[A-Za-zА-Яа-я\s]*" required/>
                   <hr/>
                 </div>
-                <div className={styles['popup__input__inputGroup-one']}>
+                <div className={styles['popup__form-input__inputGroup-one']}>
                   <label>Телефон</label>
                   <ReactPhoneNumberInput
                     defaultCountry="RU"
@@ -79,13 +79,13 @@ export default function Modal({ open, onClose }: ModalProps) {
                   <hr/>
                 </div>
               </div>
-              <div className={styles['popup__input__inputGroupTwo']}>
+              <div className={styles['popup__form-input__inputGroupTwo']}>
                 <label>Ваши пожелания по сайту</label>
-                <input type='text' className={styles['popup__input']} name='wishes' />
+                <input type='text' className={styles['popup__form-input']} name='wishes' />
                 <hr/>
               </div>
             </div>
-            <button type="submit" className={styles['popup__button']}>Оставить заявку</button>
+            <button type="submit" className={styles['popup__form-button']}>Оставить заявку</button>
           </form>
           </div>
           {successPopupVisible && <SuccessPopup open={true} onClose={() => setSuccessPopupVisible(false)}/>}

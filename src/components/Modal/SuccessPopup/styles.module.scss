@@ -15,7 +15,7 @@
     justify-content: space-around;
     background-color: black;
     border: 2px solid white;
-    width: 70vw;
+    width: 80vw;
     max-width: 882px;
     max-height: 90vh;
     border-radius: 35px;
@@ -25,8 +25,14 @@
         font-family: "Enthalpy";
             font-size: 92px;
             line-height: 93.39px;
-            width: 712px;
             color:  #CFFC86;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+              font-size: 80px;
+          }
+          @media screen and (max-width: 390px) {
+            font-size: 60px;
+        }
     }
 }
