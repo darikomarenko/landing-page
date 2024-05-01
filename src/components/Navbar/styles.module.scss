@@ -20,6 +20,11 @@
 
     &__logo {
         padding: 20px;
+
+        @media screen and (max-width: 425px) {
+            text-align: center;
+            
+        }
         
     }
 
@@ -36,6 +41,17 @@
             gap: 20px;
             
         }
+        @media screen and (max-width: 425px) {
+            flex-direction: column;
+            text-align: left;
+            
+        }
+    
+    }
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+        text-align: left;
+        
     }
 }
 .navbar li {
